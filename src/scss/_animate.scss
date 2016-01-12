@@ -7,11 +7,11 @@
 		background-color: transparent;
 	}
 	to {
-		background-color: #FFF;
+		background-color: #00000;
 	}
 }
 
 /* Mixins */
 @mixin fade-in($time) {
-	transition: all $time ease-in-out 0s;
+	transition: all $time ease-in-out 0.2s;
 }

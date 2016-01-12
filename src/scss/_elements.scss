@@ -9,12 +9,28 @@ a, .btn, img {
 
 
 .navbar-transparent {
+
 	height: $navbar-height;
 	border-left: 0px; border-right: 0px; border-top: 0px;
 	border-bottom:1px solid rgba(255, 255, 255, 0.117647);
 
-	background-color: none;
+	background-color: transparent;
 	border-radius: 0px;
+}
+
+.navbar-transparent-noscroll {
+	background-color: none;
+	@include fade-in(0.5s);
+}
+
+.navbar-transparent-scrollhalf {
+	background-color: rgba(0, 0, 0, 0.5) !important;
+	@include fade-in(0.5s);
+}
+
+.navbar-transparent-scrolled {
+	background-color: rgba(0, 0, 0, 0.9) !important;
+	@include fade-in(0.5s);
 }
 
 .navbar-brand {

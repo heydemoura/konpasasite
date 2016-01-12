@@ -7,7 +7,7 @@
     background-color: transparent;
   }
   to {
-    background-color: #FFF;
+    background-color: #00000;
   }
 }
 /* Mixins */
@@ -43,7 +43,7 @@ a {
 }
 
 a, .btn, img {
-  transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0.2s;
 }
 
 .navbar-transparent {
@@ -52,8 +52,23 @@ a, .btn, img {
   border-right: 0px;
   border-top: 0px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.11765);
-  background-color: none;
+  background-color: transparent;
   border-radius: 0px;
+}
+
+.navbar-transparent-noscroll {
+  background-color: none;
+  transition: all 0.5s ease-in-out 0.2s;
+}
+
+.navbar-transparent-scrollhalf {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  transition: all 0.5s ease-in-out 0.2s;
+}
+
+.navbar-transparent-scrolled {
+  background-color: rgba(0, 0, 0, 0.9) !important;
+  transition: all 0.5s ease-in-out 0.2s;
 }
 
 .navbar-brand {
