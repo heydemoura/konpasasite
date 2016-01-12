@@ -1,0 +1,26 @@
+body {
+	font-family: "Roboto";
+	letter-spacing: 0.2;
+}
+
+
+.row-first {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,7db9e8+100 */
+	background: $invert-color; /* Old browsers */
+	background: -moz-linear-gradient(left,  $invert-color 0%, #005ECF 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left,  $invert-color 0%,#005ECF 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right,  $invert-color 0%,#005ECF 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	
+	background: transparent radial-gradient(circle farthest-side at right bottom, #005ECF 5%, #1C2C4A 50%, #00142C 95%) repeat scroll 0% 0%;
+
+	color: #fff;
+
+	height: 100%;
+}
+
+#main-headline
+{
+	background-image: url("file:///home/hmoura/Desktop/newSite/hero-screen4.png");
+	background-position: center right;
+	background-size: 80%;
+}

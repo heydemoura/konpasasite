@@ -1,0 +1,53 @@
+/* Globals */
+a {
+	text-decoration: none;
+}
+
+a, .btn, img {
+	@include fade-in(0.5s);
+}
+
+
+.navbar-transparent {
+	height: $navbar-height;
+	border-left: 0px; border-right: 0px; border-top: 0px;
+	border-bottom:1px solid rgba(255, 255, 255, 0.117647);
+
+	background-color: none;
+	border-radius: 0px;
+}
+
+.navbar-brand {
+	margin-left: 0;
+	height: $navbar-height;;
+	font-size: $navbar-brand-font-size;
+	font-weight: 400;
+	letter-spacing: .1em;
+	padding-top: ($navbar-height - $navbar-brand-font-size)/2;
+	color: white;
+	font-weight: bold !important;
+	text-transform: uppercase;
+	&:hover {
+		text-decoration: none !important;
+		color: white;
+	}
+}
+
+.navbar-nav {
+	height: $navbar-height;
+	li {
+		height: inherit;
+		&:first-child {
+			border-left: 1px solid rgba(255, 255, 255, 0.07);
+		}
+		a { 
+			color: white;
+			height: inherit ;
+		    border-right: 1px solid rgba(255, 255, 255, 0.07);
+		    padding: 37px 25px;
+		    &:hover {
+				color: $invert-color;
+		    }
+		}
+	}
+}

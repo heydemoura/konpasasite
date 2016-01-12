@@ -1,0 +1,17 @@
+/* 
+	Animations
+*/
+
+@keyframes fade {
+	from {
+		background-color: transparent;
+	}
+	to {
+		background-color: #FFF;
+	}
+}
+
+/* Mixins */
+@mixin fade-in($time) {
+	transition: all $time ease-in-out 0s;
+}

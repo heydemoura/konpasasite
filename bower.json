@@ -1,0 +1,27 @@
+{
+  "name": "Konpasa",
+  "description": "Konpasa Website",
+  "main": "index.js",
+  "authors": [
+    "Heyde Moura"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "konpasa",
+    "web",
+    "site"
+  ],
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.6"
+  }
+}
