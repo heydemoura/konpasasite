@@ -2,6 +2,7 @@
 /* 
 	Animations
 */
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400);
 @keyframes fade {
   from {
     background-color: transparent;
@@ -11,11 +12,12 @@
   }
 }
 /* Mixins */
-body {
-  font-family: "Roboto";
-  letter-spacing: 0.2;
+/* Containers */
+@media (min-width: 1200px) {
+  .container {
+    width: 1220px;
+  }
 }
-
 .row-first {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,7db9e8+100 */
   background: #181818;
@@ -32,18 +34,33 @@ body {
 }
 
 #main-headline {
-  background-image: url("file:///home/hmoura/Desktop/newSite/hero-screen4.png");
-  background-position: center right;
-  background-size: 80%;
+  height: 1084px;
+  background-image: url("file:///home/hmoura/Desktop/newSite/hero-screen4-2.png");
+  background-repeat: no-repeat;
+  background-position: 70% 100%;
+  background-size: 40%;
+}
+#main-headline .headline-wrapper {
+  padding-top: 200px;
+  padding-bottom: 400px;
 }
 
 /* Globals */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto";
+  letter-spacing: 0.2;
+}
+
 a {
   text-decoration: none;
 }
 
 a, .btn, img {
-  transition: all 0.5s ease-in-out 0.2s;
+  transition: all 0.5s ease-in-out 0s;
 }
 
 .navbar-transparent {
@@ -58,17 +75,17 @@ a, .btn, img {
 
 .navbar-transparent-noscroll {
   background-color: none;
-  transition: all 0.5s ease-in-out 0.2s;
+  transition: all 0.5s ease-in-out 0s;
 }
 
 .navbar-transparent-scrollhalf {
   background-color: rgba(0, 0, 0, 0.5) !important;
-  transition: all 0.5s ease-in-out 0.2s;
+  transition: all 0.5s ease-in-out 0s;
 }
 
 .navbar-transparent-scrolled {
   background-color: rgba(0, 0, 0, 0.9) !important;
-  transition: all 0.5s ease-in-out 0.2s;
+  transition: all 0.5s ease-in-out 0s;
 }
 
 .navbar-brand {
@@ -104,6 +121,61 @@ a, .btn, img {
 }
 .navbar-nav li a:hover {
   color: #181818;
+}
+
+/* 
+	Page Header
+*/
+.page-header {
+  border-bottom: 0px;
+}
+
+.headline {
+  font-size: 63px;
+  font-weight: 100 !important;
+}
+
+/* Icons */
+.fa-border-circle {
+  min-height: 48px;
+  min-width: 48px;
+  line-height: 48px;
+  border-radius: 999px;
+  border: 1px solid #ebf9f1;
+  color: #ebf9f1;
+}
+
+/*  Specials */
+.mouse_scroll {
+  animation-duration: 3s;
+  animation-delay: 1s;
+  animation-iteration-count: 1;
+  z-index: 99;
+  color: #fff;
+  position: absolute;
+  bottom: 40px;
+  margin: 0px auto;
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+
+/* Carousel */
+.carousel-control {
+  background: none !important;
+  top: 400px;
+}
+
+/* Paragraph */
+.lead {
+  line-height: 1.4em;
+}
+
+/* Buttons */
+.btn-lg {
+  border-radius: 2px;
+  line-height: 1.33333;
+  padding: 26.66667px 53.33333px;
 }
 
 /*# sourceMappingURL=main.css.map */

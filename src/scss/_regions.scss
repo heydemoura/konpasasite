@@ -1,7 +1,11 @@
-body {
-	font-family: "Roboto";
-	letter-spacing: 0.2;
+/* Containers */
+@media (min-width: 1200px) {
+	.container {
+		width: 1220px;
+	}
 }
+
+
 
 
 .row-first {
@@ -10,17 +14,22 @@ body {
 	background: -moz-linear-gradient(left,  $invert-color 0%, #005ECF 100%); /* FF3.6-15 */
 	background: -webkit-linear-gradient(left,  $invert-color 0%,#005ECF 100%); /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(to right,  $invert-color 0%,#005ECF 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	
 	background: transparent radial-gradient(circle farthest-side at right bottom, #005ECF 5%, #1C2C4A 50%, #00142C 95%) repeat scroll 0% 0%;
 
 	color: #fff;
-
 	height: 100%;
 }
 
 #main-headline
 {
-	background-image: url("file:///home/hmoura/Desktop/newSite/hero-screen4.png");
-	background-position: center right;
-	background-size: 80%;
+	height: 1084px;
+	background-image: url("file:///home/hmoura/Desktop/newSite/hero-screen4-2.png");
+	background-repeat:  no-repeat;
+	background-position: 70% 100%;
+	background-size: 40%;
+
+	.headline-wrapper {
+		padding-top: 200px;
+		padding-bottom: 400px;
+	}
 }
