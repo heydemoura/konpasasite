@@ -33,18 +33,6 @@
   height: 100%;
 }
 
-#main-headline {
-  height: 1084px;
-  background-image: url("file:///home/hmoura/Desktop/newSite/hero-screen4-2.png");
-  background-repeat: no-repeat;
-  background-position: 70% 100%;
-  background-size: 40%;
-}
-#main-headline .headline-wrapper {
-  padding-top: 200px;
-  padding-bottom: 400px;
-}
-
 /* Globals */
 * {
   box-sizing: border-box;
@@ -161,11 +149,39 @@ a, .btn, img {
 }
 
 /* Carousel */
-.carousel-control {
-  background: none !important;
-  top: 400px;
+#carousel {
+  /* background-image: url("file:///home/hmoura/Desktop/newSite/hero-screen4-2.png");
+  background-repeat:  no-repeat;
+  background-position: 70% 60%; */
+  min-height: auto;
+  min-width: auto;
+}
+#carousel .carousel-inner {
+  min-height: 871px;
+}
+#carousel .carousel-item-wrapper {
+  padding-top: 100px;
+  padding-bottom: 200px;
+}
+#carousel .animated.btn {
+  animation-delay: 0.5s;
 }
 
+.carousel-control {
+  background: none !important;
+  top: 40%;
+}
+
+@media (max-width: 1200) {
+  .carousel-control {
+    display: none;
+  }
+
+  #carousel {
+    background: white !important;
+    background-image: none;
+  }
+}
 /* Paragraph */
 .lead {
   line-height: 1.4em;

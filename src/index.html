@@ -4,14 +4,16 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
 		<link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
 		<link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="../bower_components/animate.css/animate.min.css">
 
 		<link rel="stylesheet" href="css/main.css">
 
 		<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+		<script src="../bower_components/wow/dist/wow.min.js"></script>
 		<script src="js/base.js"></script>
 	</head>
 
-	<body>
+	<body class="">
 		<div class="row row-first">
 			<div id="nav-wrapper">
 				<nav class="navbar navbar-transparent navbar-fixed-top" id="nav">
@@ -39,8 +41,8 @@
 				</nav>
 			</div>
 
-			<div class="row" id="main-headline">				
-				<div id="carousel" class="carousel slide" data-ride="carousel">
+			<div class="row" >				
+				<div id="carousel" class="carousel" data-ride="carousel">
 
 					<!-- Carousel Items Wrapper -->
 					<div class="carousel-inner" role="listbox">
@@ -48,45 +50,48 @@
 							
 						<div class="item active">
 							<div class="container">
-								<div class="col-md-4 col-sm-6 headline-wrapper">
+								<div class="col-md-4 col-sm-6 carousel-item-wrapper">
 									<div class="page-header ">
-										<h2 class="headline">Qual o site da sua empresa?</h2>
-										<p class="lead">o website é um dos meios aos quais o cliente recorre para certificar-se da credibilidade da sua empresa.</p>
-
-										<a href="#portfolio" class="btn btn-lg btn-warning">
-											<i class="fa fa-paint-brush"></i>
-											Confira nosso Portfólio
-										</a>
-		
+										<h2 class="headline animated slideInDown">Qual o site da sua empresa?</h2>
 									</div>
-									
-								</div>	
+
+									<p class="lead animated slideInUp">O website é um dos meios aos quais o cliente recorre para certificar-se da credibilidade da sua empresa.</p>
+
+									<a href="#portfolio" class="btn btn-lg btn-warning animated flipInX">
+										<i class="fa fa-paint-brush"></i>
+										Confira nosso Portfólio
+									</a>
+								</div>
+								<div class="col-md-4 col-sm-6">
+									<img height='800' src="/home/hmoura/Desktop/newSite/hero-screen4-3.png" alt="" class="animated fadeIn">
+								</div>
 							</div>
 						</div>
 
 						<div class="item">
 							<div class="container">
-								<div class="col-md-4 col-sm-6 headline-wrapper">
+								<div class="col-md-4 col-sm-6 carousel-item-wrapper">
 									<div class="page-header ">
-										<h2 class="headline">Designerino</h2>
+										<h2 class="headline animated slideInDown">Designerino</h2>
 									</div>
 								</div>	
 							</div>
 						</div>
 					
 					</div>
+				</div> <!-- /carousel -->
 
-					<!-- Carousel Controls -->
-					<a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
-				    	<span class="fa fa-angle-left fa-2x fa-border-circle" aria-hidden="true"></span>
-				    	<span class="sr-only">Previous</span>
-				  	</a>
-				  	<a class="right carousel-control" href="#carousel" role="button" data-slide="next">
-				    	<span class="fa fa-angle-right fa-2x fa-border-circle" aria-hidden="true"></span>
-				    	<span class="sr-only">Next</span>
-				  	</a>	
-				</div>
-			</div>
+				<!-- Carousel Controls -->
+				<a class="left carousel-control hidden-sm hidden-xs animated fadeIn" href="#carousel" role="button" data-slide="prev">
+			    	<span class="fa fa-angle-left fa-2x fa-border-circle" aria-hidden="true"></span>
+			    	<span class="sr-only">Previous</span>
+			  	</a>
+			  	<a class="right carousel-control hidden-sm hidden-xs animated fadeIn" href="#carousel" role="button" data-slide="next">
+			    	<span class="fa fa-angle-right fa-2x fa-border-circle" aria-hidden="true"></span>
+			    	<span class="sr-only">Next</span>
+			  	</a>	
+			</div> 
+
 			<div class="mouse_scroll">
 				<a href="#work">
 					<i class="fa fa-angle-down fa-2x fa-border-circle"></i >
@@ -96,15 +101,27 @@
 		</div>
 	
 
-		<div class="row">
+		<div class="row wow bounceIn" data-wow-duration="2s">
 			<div class="container">
 				<div class="page-header">
 					<h2 id="work">Teste</h2>
 				</div>
+				<p class="lead">Praesent consequat facilisis libero, a euismod libero rutrum eu. Etiam sit amet tempor dui. Sed sit amet sem tempus eros cursus rutrum in consectetur lorem. Donec sit amet congue nisl. Duis facilisis enim facilisis, gravida magna ut, congue nisi. Ut vel aliquet leo, sed congue nisi. Aliquam erat volutpat. Phasellus sed magna vulputate, tincidunt tellus sit amet, placerat justo. Ut finibus orci sed purus euismod posuere. Nunc eget pretium sapien. Nunc a tortor vitae libero imperdiet rhoncus vel at eros. Curabitur euismod, massa at feugiat dapibus, purus orci ultricies metus, sit amet auctor risus sapien vitae urna. Maecenas rhoncus felis elementum nulla aliquet pellentesque. Cras eleifend dui ante.
+				</p>
+				<p class="lead">Praesent consequat facilisis libero, a euismod libero rutrum eu. Etiam sit amet tempor dui. Sed sit amet sem tempus eros cursus rutrum in consectetur lorem. Donec sit amet congue nisl. Duis facilisis enim facilisis, gravida magna ut, congue nisi. Ut vel aliquet leo, sed congue nisi. Aliquam erat volutpat. Phasellus sed magna vulputate, tincidunt tellus sit amet, placerat justo. Ut finibus orci sed purus euismod posuere. Nunc eget pretium sapien. Nunc a tortor vitae libero imperdiet rhoncus vel at eros. Curabitur euismod, massa at feugiat dapibus, purus orci ultricies metus, sit amet auctor risus sapien vitae urna. Maecenas rhoncus felis elementum nulla aliquet pellentesque. Cras eleifend dui ante.
+				</p>
+
+			</div>
+		</div>
+
+		<div class="row wow bounceIn" data-wow-delay="0.5s">
+			<div class="container-fluid">
+				<img width="100%" src="http://festivaiskinoarte.org/wp-content/uploads/2015/10/3.png" alt="">
 			</div>
 		</div>
 
 		
 		<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+		
 	</body>
 </html>

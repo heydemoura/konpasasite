@@ -118,11 +118,49 @@ a, .btn, img {
 
 
 /* Carousel */
+#carousel
+{
+	/* background-image: url("file:///home/hmoura/Desktop/newSite/hero-screen4-2.png");
+	background-repeat:  no-repeat;
+	background-position: 70% 60%; */
+	// background-size: 60%;
+	min-height: auto;
+	min-width: auto;
+
+	
+	.carousel-inner {
+		min-height: 871px;
+	}
+
+	.carousel-item-wrapper {
+		padding-top: 100px;
+		padding-bottom: 200px;
+	}
+	
+	.animated.btn {
+		animation-delay: 0.5s; 
+		// animation-duration: 0.5s;
+	}
+}
+
+
 .carousel-control
 {
 	background: none !important;
-	top: 400px;
+	top: 40%;
 }
+
+@media (max-width: 1200) {
+	.carousel-control {
+		display: none;
+	}
+
+	#carousel {
+		background: rgba(255, 255, 255, 1) !important;
+		background-image: none;
+	}
+}
+
 
 /* Paragraph */
 .lead {
