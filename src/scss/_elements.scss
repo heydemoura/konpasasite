@@ -3,9 +3,13 @@
 	box-sizing: border-box;
 }
 
+html, body {overflow-x: hidden;}
+
 body {
 	font-family: "Roboto";
 	letter-spacing: 0.2;
+	position: relative;
+
 }
 
 a {
@@ -21,7 +25,6 @@ a, .btn, img {
 	height: $navbar-height;
 	border-left: 0px; border-right: 0px; border-top: 0px;
 	border-bottom:1px solid rgba(255, 255, 255, 0.117647);
-
 	background-color: transparent;
 	border-radius: 0px;
 }
@@ -48,9 +51,18 @@ a, .btn, img {
 	font-weight: 400;
 	letter-spacing: .1em;
 	padding-top: ($navbar-height - $navbar-brand-font-size)/2;
+	padding-left: 20%;
 	color: white;
 	font-weight: bold !important;
 	text-transform: uppercase;
+
+
+
+	background-image: url("/home/hmoura/Desktop/newSite/Compass_Icon_White.png");
+	background-position: 0% 50%;
+	background-size: 15%;
+	background-repeat: no-repeat;
+
 	&:hover {
 		text-decoration: none !important;
 		color: white;
@@ -73,6 +85,7 @@ a, .btn, img {
 				color: $invert-color;
 		    }
 		}
+		
 	}
 }
 
@@ -124,33 +137,102 @@ a, .btn, img {
 	background-repeat:  no-repeat;
 	background-position: 70% 60%; */
 	// background-size: 60%;
-	min-height: auto;
-	min-width: auto;
+	min-width: 100%;
+	min-height: 100%;
 
-	
 	.carousel-inner {
-		min-height: 871px;
+		min-width: 100%;
+		min-height: 100%;
 	}
 
+
+
 	.carousel-item-wrapper {
-		padding-top: 100px;
-		padding-bottom: 200px;
+		// padding-top: 100px;
+		padding-bottom: 100px;
+
+		.img {
+			max-width: 100%;
+			vertical-align: middle;
+			height: auto;
+		}
 	}
 	
 	.animated.btn {
 		animation-delay: 0.5s; 
-		// animation-duration: 0.5s;
+	}
+
+	.carousel-control
+	{
+		background: none !important;
+		top: 35%;
 	}
 }
 
-
-.carousel-control
-{
-	background: none !important;
-	top: 40%;
+@media (max-width: 450px) {
+	#carousel {
+}
 }
 
+@media (max-width: 600px) {
+	.navbar-nav {
+		max-height: 100%;
+		margin: 0px;
+	}
+
+	.navbar-collapse {
+		max-height: 100%;
+		position: absolute;
+		left: 0;
+		right: 0;
+
+		margin-left: 0px;
+		margin-right: 0px;
+		&.in{
+			overflow-y: visible;
+			margin-left: 0px;
+			margin-right: 0px;
+			padding: 0px;
+			min-width: 100%;
+			position: absolute;
+			left:0;
+			right: 0;
+			height: 100%;
+		}
+
+		li {
+			background-color: rgba(0, 0, 0, 0.9) !important;
+			@include fade-in(0.5s);
+		}
+		
+	}
+}
+
+@media (min-width: 600px) {
+	#carousel {
+		.hidden-xs {
+			display: block !important;
+		}	
+	}
+}
+
+@media (max-width: 768px) {
+			#carousel { 
+				text-align: center;
+
+				.img {
+					float:center;
+					max-width: 100%;
+					height: auto;
+				}
+
+			}
+		}
+
+
+
 @media (max-width: 1200) {
+
 	.carousel-control {
 		display: none;
 	}
@@ -172,4 +254,17 @@ a, .btn, img {
 	border-radius: 2px;
 	line-height: 1.33333;
 	padding: 26.66667px 53.33333px
+}
+
+/*  Containers */
+
+.container-fluid {
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+/* Image */
+img.fill {
+	width: 100%;
+	min-height: inherit;
 }

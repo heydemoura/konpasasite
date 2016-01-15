@@ -1,6 +1,7 @@
 
 $(function() {
 	new WOW().init();
+	// skrollr.init();
     $('#nav-wrapper').height($("#nav").height());
     
    	$(window).scroll(function() {
