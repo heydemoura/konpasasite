@@ -2,6 +2,8 @@
 $(function() {
 	new WOW().init();
 	// skrollr.init();
+   $('[data-toggle="tooltip"]').tooltip();
+   
     $('#nav-wrapper').height($("#nav").height());
     
    	$(window).scroll(function() {

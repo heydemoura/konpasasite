@@ -30,8 +30,8 @@
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   background: transparent radial-gradient(circle farthest-side at right bottom, #005ECF 5%, #1C2C4A 50%, #00142C 95%) repeat scroll 0% 0%;
   color: #fff;
-  min-height: 100%;
-  height: auto;
+  min-height: 870px;
+  height: 100%;
 }
 
 /* Globals */
@@ -93,7 +93,7 @@ a, .btn, img {
   color: white;
   font-weight: bold !important;
   text-transform: uppercase;
-  background-image: url("/home/hmoura/Desktop/newSite/Compass_Icon_White.png");
+  background-image: url("../img/Compass_Icon_White.png");
   background-position: 0% 50%;
   background-size: 15%;
   background-repeat: no-repeat;
@@ -146,24 +146,20 @@ a, .btn, img {
 
 /*  Specials */
 .mouse_scroll {
-  animation-duration: 3s;
-  animation-delay: 1s;
+  animation-duration: 0.1s !important;
   animation-iteration-count: 1;
-  z-index: 99;
+  z-index: 999;
   color: #fff;
-  position: absolute;
-  bottom: 40px;
-  margin: 0px auto;
   width: 100%;
+  margin: 0px auto;
+  position: absolute;
+  bottom: 140px;
   display: block;
   text-align: center;
 }
 
 /* Carousel */
 #carousel {
-  /* background-image: url("file:///home/hmoura/Desktop/newSite/hero-screen4-2.png");
-  background-repeat:  no-repeat;
-  background-position: 70% 60%; */
   min-width: 100%;
   min-height: 100%;
 }
@@ -176,8 +172,12 @@ a, .btn, img {
 }
 #carousel .carousel-item-wrapper .img {
   max-width: 100%;
-  vertical-align: middle;
   height: auto;
+  vertical-align: middle;
+}
+#carousel .carousel-item-wrapper .img.animated {
+  animation-delay: 1s;
+  animation-duration: 0.5s;
 }
 #carousel .animated.btn {
   animation-delay: 0.5s;
@@ -264,6 +264,21 @@ a, .btn, img {
 img.fill {
   width: 100%;
   min-height: inherit;
+}
+
+/* Tooltip */
+.tooltip-overlay {
+  z-index: 999;
+  position: absolute;
+  top: 350px;
+  left: 255px;
+  float: center !important;
+  opacity: 0.1;
+  transition: all 0.2s ease-in-out 0s;
+  cursor: pointer;
+}
+.tooltip-overlay:hover {
+  opacity: 1;
 }
 
 /*# sourceMappingURL=main.css.map */
