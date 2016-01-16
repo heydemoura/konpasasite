@@ -12,6 +12,6 @@
 }
 
 /* Mixins */
-@mixin fade-in($time) {
-	transition: all $time ease-in-out 0s;
+@mixin fade-in($time, $step) {
+	transition: all $time ease-in-out $step;
 }
