@@ -10,6 +10,7 @@
 @import url(https://fonts.googleapis.com/css?family=Arvo:400,700);
 @import url(https://fonts.googleapis.com/css?family=Ubuntu:400,700,500);
 @import url(https://fonts.googleapis.com/css?family=Playball);
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,500);
 @keyframes fade {
   from {
     background-color: transparent;
@@ -167,8 +168,9 @@ a, .btn, img {
 
 /*  Specials */
 .mouse_scroll {
-  animation-duration: 0.1s !important;
-  animation-iteration-count: 1;
+  animation-duration: 2s !important;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
   z-index: 999;
   color: #fff;
   width: 100%;
@@ -378,7 +380,7 @@ img.fill {
 .portfolio .page-header h1, .portfolio .page-header h2, .portfolio .page-header h3, .portfolio .page-header h4, .portfolio .page-header h5 {
   color: #dedede;
   text-align: center;
-  font-family: "Roboto Slab", sans;
+  font-family: "Roboto Slab", sans-serif;
   text-shadow: 0px 2px 2px #5f5f5f;
 }
 .portfolio .page-header h1 {
@@ -409,8 +411,9 @@ img.fill {
   width: 100%;
   z-index: 20;
   display: none;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 300;
+  font-size: 48px;
   text-shadow: 0px 0px 12px #000000;
   animation: none;
 }
